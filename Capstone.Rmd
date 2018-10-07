@@ -1,0 +1,57 @@
+---
+title: "Capstone Project Submission"
+author: "Colin Tan"
+date: "October 3, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# London Home Equity Loan Engine
+## Summary
+
+The focus of this project will be to create current assessment of home values in the London metropolitan area based on prevailing determinants of home values. 
+
+Using this real time assessment of home value and other pertinent data, we will attempt to provide an assessment of the available equity available for collateral backed loans for the specific property.
+
+## Client
+My client is a hedge fund based in the London area serving real estate clients in the London area seeking home equity loans. They require an assessment engine to that will allow them to provide safe collateral backed equity loans.
+
+## Data Sources
+Home sales data from Zoopla, a real estate website serving the UK region
+ <http://rmarkdown.rstudio.com>.
+ 
+Google API
+<https://console.cloud.google.com>
+
+## Approach
+# Valuation Engine for Homes in the London Metro Area
+1. Obtain the postal codes of the London metro region.
+2. Obtain home sales and rental data using the Zoopla API key
+3. Using a basic multivariable regression model?, value the homes based on recent sales
+
+  Homes in the London metro area will be split into the following categories for purposes of valuation: 
+  i. number of rooms
+  ii. square footage
+  iii. type of home (detached, semi detached, flat etc.) 
+  
+4. Create a simple valuation engine based on this data.
+5. Overlay other pertinent data that may influence home values to improve valuation engine (schools, API, restaurants)
+
+# Loan Committment Determination
+Home equity loans are  a type of 'second' mortgage taken out against the value of a home.
+It is a popular way for homeowners to tap into their equity in the home to access funds.
+For lenders, it is a fairly safe loan as it is secured with the home as collateral.
+
+6. Create loan committment calculation engine to determine loan committments to offer clients based on the following variables:
+  1) available equity in the home- this will be the collateral backing the loan
+  2) risk parameters: 
+    1) loan pricing 2) overall portfolio exposure in investment firm 3) current 
+  3) borrower credit history, personal debt to income ratios (if available)
+  4) Determine the Loan to Value (LTV) that the lender is comfortable providing to the borrower to determine the loan committment that the lender will offer to the borrower.
+  
+  
+  
+
